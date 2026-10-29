@@ -1,0 +1,6 @@
+{
+  "name": "Céleste Atelier - Heritage Event Planner",
+  "description": "A minimalist, aesthetic GenAI event planning atelier for weddings, milestone birthdays, and community galas with budget visualizers, day-of timelines, vendor registries, bespoke idea generation, and real-time contributor collaboration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

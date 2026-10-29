@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-quintessential: "Quintessential", Georgia, serif;
+  --font-marck: "Marck Script", cursive;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF8F5;
+    color: #24211E;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-quintessential);
+  }
+
+  .font-script {
+    font-family: var(--font-marck);
+  }
+
+  .font-editorial {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom aesthetic scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3EFE8;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8CEBE;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B9AB96;
+}
+
+/* Luxury subtle paper card texture */
+.paper-card {
+  background: #FFFFFF;
+  border: 1px solid #EAE4D9;
+  box-shadow: 0 4px 20px -2px rgba(60, 50, 40, 0.03), 0 2px 6px -1px rgba(60, 50, 40, 0.02);
+}
+
+.paper-card-subtle {
+  background: #FCFAF7;
+  border: 1px solid #ECE6DB;
+}
+
+.paper-card-elevated {
+  background: #FFFFFF;
+  border: 1px solid #E2D9CB;
+  box-shadow: 0 10px 30px -4px rgba(45, 38, 28, 0.06), 0 4px 12px -2px rgba(45, 38, 28, 0.03);
+}
+
+.gold-border {
+  border-color: #D9CEBD;
+}
+
+/* Decorative divider with diamond */
+.flourish-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #B2A28A;
+}
+.flourish-divider::before,
+.flourish-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #E4DCD0;
+}
+.flourish-divider:not(:empty)::before {
+  margin-right: .75em;
+}
+.flourish-divider:not(:empty)::after {
+  margin-left: .75em;
+}
